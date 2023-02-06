@@ -1,5 +1,2 @@
-# módulos do node ("npm install" para reinstalar essa pasta)
-nodejs/node_modules
-
 # banco que está vindo como volume do container
 mysql_data
