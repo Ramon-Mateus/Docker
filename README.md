@@ -95,3 +95,15 @@
 ```shell
   docker compose exec {nome serviço} bash
 ```
+
+* Roda o container com a imagem do mysql já passando a senha do root e o banco que você quer criar.
+
+```shell
+  docker run --env MYSQL_ROOT_PASSWORD=root --env MYSQL_DATABASE=meu_banco mysql:5.7
+```
+
+* Comando para quando tiver dentro do container entrar no cliente do mysql usando as configurações passadas no comando acima.
+
+```shell
+  mysql -uroot -proot
+```
